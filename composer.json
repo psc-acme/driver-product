@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/driver-product",
+    "description": "Package driver-product for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\DriverProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/routing": "^7.0",
+        "monolog/monolog": "^3.2.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan-symfony": "^1.0",
+        "phpunit/phpunit": "^11.0",
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
